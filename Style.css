@@ -1,0 +1,107 @@
+body {
+    background-color: white;  
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; 
+}
+
+#navbar-pinterest {
+    text-align: center;
+    background-color: white;   
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    padding: 20px;
+    width: 100%;
+    padding-top: 15px;
+}
+
+#navbar-pinterest a {
+    text-decoration: none;
+    color: black;
+}
+
+#inicio { 
+    height: 45px;
+    width: 60px;
+    border-radius: 35%;
+    color: white;
+    background-color: black;
+    cursor: pointer;
+}
+
+.finder {
+    background-color:rgb(218, 211, 211);
+    border-color:transparent;
+    border-radius: 20px;
+    height: 30px;
+    width: 75%;
+    background-image: url(lupa.png);
+    background-size: contain;
+    background-repeat: no-repeat;   
+}
+
+.botones {
+    width: 20px;
+    height: 20px;
+    display:inline-table;  
+}
+
+#user {
+    border-radius: 50%;
+}
+
+#pinterest-icon {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+}
+
+#content {
+   columns: 5 320px;
+   margin-bottom: 0.5em;
+   margin-top: 100px; 
+}
+
+.card-image {
+    max-width: 100%;
+    margin-bottom: 1em;
+    border-radius: 10%;    
+    
+}
+.card-image:hover{
+    cursor: zoom-in;
+    filter: brightness(0.5);
+    
+}
+
+.button-container {
+    position:relative;  
+}
+
+.button-container a {
+    text-decoration: none;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: red;
+    border-radius: 20%;
+    color: black;
+    text-align:center;   
+    opacity: 0;
+}
+.button-container a:hover {
+    opacity: 1;
+}
+
+@media only screen and (max-width: 699px) {
+ 
+    #navbar-pinterest .finder{
+       width: 30%;
+    } 
+}
+@media only screen and (min-width: 700px) and (max-width: 1370px) {
+ 
+    #navbar-pinterest .finder{
+       width: 50%;
+    } 
+}
+
